@@ -1,0 +1,15 @@
+# Top four items 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx1
+    image: nginx
+    ports:
+    - containerPort: 80
+
+  - name: nginx2
+    image: ubuntu
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']

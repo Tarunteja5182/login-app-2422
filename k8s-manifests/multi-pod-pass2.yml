@@ -1,0 +1,16 @@
+# Top four items 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+
+  - name: nonde-api
+    image: ravi2krishna/nodejs-api
+    ports:
+    - containerPort: 8080
