@@ -1,0 +1,42 @@
+# - COMMENT
+# - Define Key Values 
+name: ravi
+city: hyderabad
+zip: 500081
+
+# Dirctionary
+persons:
+  name: ravi
+  city: hyderabad
+  zip: 500081
+
+# Not a Dictionary
+persons:
+name: ravi
+city: hyderabad
+zip: 500081
+
+# List / Array
+persons: # Dictionary 
+  name: ravi
+  city: hyderabad
+  zip: 500081
+  activities: # List
+    - code
+    - test
+    - deploy
+
+# Multiple List
+persons: # Dictionary
+  name: ravi
+  city: hyderabad
+  zip: 500081
+  activities: # List
+    - code
+    - test
+    - deploy
+  collobrators:
+    - name: john
+      city: hyd
+    - name: ram
+      city: pune     
