@@ -1,0 +1,18 @@
+# For Deployment
+deployment:
+  name:
+  replicas:
+  label:
+  container:
+  image:
+  port:
+
+# For Service
+service:
+  name:
+  type:
+  label:
+  port:
+  nodeport:
+
+# Others follow up
