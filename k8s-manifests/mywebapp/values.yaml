@@ -1,18 +1,18 @@
 # For Deployment
 deployment:
-  name: nginx
+  name: login-app
   replicas: 1
-  label: nginx
-  container: web-container
-  image: ravi2krishna/nginx
+  label: login
+  container: login-container
+  image: ravi2krishna/login-2422
   port: 80
 
 # For Service
 service:
-  name: nginx
+  name: login
   type: NodePort
-  label: nginx
+  label: login
   port: 80
-  nodeport: 30007
+  nodeport: 30008
 
 # Others follow up
