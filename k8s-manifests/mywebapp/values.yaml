@@ -1,18 +1,18 @@
 # For Deployment
 deployment:
-  name:
-  replicas:
-  label:
-  container:
-  image:
-  port:
+  name: nginx
+  replicas: 1
+  label: nginx
+  container: web-container
+  image: ravi2krishna/nginx
+  port: 80
 
 # For Service
 service:
-  name:
-  type:
-  label:
-  port:
-  nodeport:
+  name: nginx
+  type: NodePort
+  label: nginx
+  port: 80
+  nodeport: 30007
 
 # Others follow up
